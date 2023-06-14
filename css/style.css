@@ -1,0 +1,392 @@
+body::-webkit-scrollbar {
+    /* عرض Scrollbar */
+    width: 7px;
+    position: relative;
+}
+
+body::-webkit-scrollbar-track {
+    /* تلوين منطقة التي يتحرك فيها Scroll */
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* تغيير لون Scroll */
+    background-color: #2A3855;
+    /* تدوير أركان الإطار Scroll */
+    border-radius: 20px;
+    /* خاصة بحجم ونوع ولون اﻹطار Scroll */
+    border: 2px solid white;
+}
+
+
+/*********************************************************/
+
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'), url(fonts/DroidKufi-Regular.woff) format('woff'), url(fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: '';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'), url(fonts/DroidKufi-Bold.woff) format('woff'), url(fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+
+.font-sas {
+    font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+
+
+/***************************************************************/
+
+* {
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+}
+
+.text-primary {
+    color: #2A3855 !important;
+}
+
+.bg-primary {
+    background-color: #2A3855 !important;
+}
+
+body {
+    font-family: "Droid Arabic Kufi", Tahoma, Geneva, sans-serif;
+    /*background-image: url(../images/5.jpg);*/
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2a3855;
+}
+
+.container {
+    position: relative;
+}
+
+
+/***************************************************************/
+
+.top-header {
+    text-align: right!important;
+    background-color: #2a3855;
+    padding: 10px;
+}
+
+.top-header ul li a {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid #e5e5e5;
+    color: #bcbcbd;
+}
+
+.top-header * {
+    color: #bcbcbd;
+}
+
+.list-inline {
+    margin: 0;
+}
+
+
+/***************************************************************/
+
+.navbar {
+    background-color: #fff;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #414141;
+    transition: 0.2s ease;
+    font-size: 15px;
+    padding: 20px 10px;
+}
+
+@media screen and (min-width: 991px) {
+    .navbar .navbar-nav .nav-link {
+        border-bottom: 2px solid transparent;
+    }
+    .navbar .navbar-nav .nav-link:hover {
+        border-bottom: 2px solid #414141;
+    }
+}
+
+.navbar .navbar-brand {
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    height: 135px;
+    width: 200px;
+    background: #12a3d5;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
+    z-index: 9;
+}
+
+.navbar .navbar-brand img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar .navbar-brand {
+        height: 75px;
+        width: 115px;
+    }
+    .navbar .navbar-brand img {
+        width: 80px;
+    }
+}
+
+
+/***************************************************************/
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-caption {
+    text-align: right;
+    top: 10%;
+    right: 3%;
+}
+
+.carousel-caption h5 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    line-height: 4vw;
+}
+
+.carousel-caption p {
+    font-size: 2.1vw;
+    line-height: 4vw;
+}
+
+@media screen and (max-width: 575px) {
+    .carousel-caption {
+        right: 10%;
+    }
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+    height: 500px;
+}
+
+@media screen and (max-width: 575px) {
+    .carousel-fade .carousel-item.active,
+    .carousel-fade .carousel-item-next.carousel-item-start,
+    .carousel-fade .carousel-item-prev.carousel-item-end {
+        height: 300px;
+    }
+}
+
+
+/***************************************************************/
+
+main .first-services p {
+    text-align: justify !important;
+    text-align-last: center !important;
+}
+
+
+/****************************************************************/
+
+main section .short {
+    width: 4.2087rem;
+    opacity: 1;
+    height: 3px;
+    background-color: #2a3855;
+    border-radius: 0.094rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold !important;
+}
+
+.light {
+    background-color: #fafafa !important;
+}
+
+main section {
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+main section .ring-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fafafa;
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    font-size: 2.368593037rem;
+    color: #2a3855;
+}
+
+main .ceo {
+    color: #fafafa;
+    background-color: #2a3855;
+}
+
+main .ceo iframe {
+    width: 80%;
+    height: 500px;
+}
+
+@media screen and (max-width: 575px) {
+    main .ceo iframe {
+        height: 200px;
+    }
+}
+
+main .services {
+    background-color: #fafafa !important;
+}
+
+main .services .bg-holder {
+    min-height: 400px;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    will-change: transform, opacity, filter;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+main .services a {
+    color: #2a3855;
+    text-decoration: none;
+}
+
+main .services a:hover {
+    color: #222d44;
+    text-decoration: underline !important;
+}
+
+
+/*********************************************************/
+
+main .brands {
+    background-color: #f2f2f2;
+    position: relative;
+    overflow: hidden;
+}
+
+main .brands img {
+    mix-blend-mode: multiply;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+main .brands img:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+@media screen and (max-width: 991px) {
+    main .brands img {
+        width: 50% !important;
+    }
+}
+
+
+/**************************************************************/
+
+main .bottom-links {
+    background-color: #3D4C6F;
+}
+
+main .bottom-links a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+main .bottom-links li {
+    margin-top: 20px;
+}
+
+main .bottom-links a:hover {
+    text-decoration: underline !important;
+}
+
+main .bottom-links :-ms-input-placeholder {
+    text-align: right;
+}
+
+main .bottom-links .brand-icon {
+    background: #2a3855;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0.188rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #fff;
+    padding: 12px;
+}
+
+
+/**************************************************************/
+
+main .copy-rights {
+    font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #2a3855;
+    position: relative;
+    display: inline-block;
+}
+
+main .copy-rights img {
+    width: 120px;
+    border-radius: 5px;
+}
+
+main .copy-rights p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    main .copy-rights * {
+        float: none;
+        text-align: center;
+        line-height: 2rem;
+    }
+}
